@@ -19,7 +19,6 @@ body{
 li, a, button{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -229,13 +228,9 @@ footer{
     justify-content: flex-start;
     box-shadow: 3px 3px 5px rgba(0,0,0, 0.1);
     list-style: none;
-    height: 100%;
-    padding: 0 30px;
-    
-    
-    
-
-    
+    height: 100%; 
+    font-size: 150%;
+    padding-top: 2vw;
 }
 
 .sidebar li{
@@ -250,6 +245,9 @@ footer{
     .hideOnMobile{
         display: none;
     }
+    body{
+        min-width: 100vw;
+    }
 }
 
 
@@ -262,5 +260,10 @@ footer{
 @media(max-width: 670px){
     .sidebar{
         width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 10vw;
+
     }
 }
