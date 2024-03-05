@@ -98,14 +98,16 @@ button:hover{
 
 footer{
     background-color: #111;
-    max-height: 100%;
+    max-height: 10vw;
     margin-top: 10vw;
+    background-color: rgb(32,36,44);
 }
 
 .footerContainer{
     width: 100%;
     padding: 70px 30px 20px;
     color: #111;
+    background-color: rgb(32,36,44);
 }
 
 .socialIcons{
@@ -158,6 +160,7 @@ footer{
 
 .footerNav{
     margin: 30px 0;
+    background-color: rgb(32,36,44);
 }
 
 .footerNav ul{
@@ -264,6 +267,13 @@ footer{
         align-items: center;
         text-align: center;
         font-size: 10vw;
+    }
 
+    .sidebar:hover{
+        color: rgba(252,92,101,0.8);
+    }
+
+    footer{
+        min-height: 10vw;
     }
 }
