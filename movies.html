@@ -1,81 +1,195 @@
-<!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/movies.css">
-    <title>VIDE</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="stylesheet" href="./CSS/movies.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<script defer src="./JS/movies.js"></script>
+	<script src="./JS/script.js"></script>
+	<title>Movie Design</title>
 </head>
+
 <body>
-    
+	<header>
+		<span class="logo"><img src="IMG/favicon.ico" alt="">VIDE</span>
 
 
-    <!---- Hidden Open / Close Toggles ---->
-<input type="radio" id="nav-close" name="nav-toggle" value="nav-close">
-<input type="radio" id="nav-toggle" name="nav-toggle" value="nav-toggle">
-<!---- END Hidden Toggles ---->
 
-<!---- Visual Open Menu Toggle ---->
-<a href="javascript:void(0);" class="nav-toggle">
+		<nav>
+			<ul class="navLinks hideOnMobile">
+				<li><a href="index.html">Főoldal</a></li>
+				<li><a href="">Dolgozz velünk!</a></li>
+				<li><a href="">Vélemények</a></li>
+				<li><a href="">Kapcsolat</a></li>
+				<li><a href="movies.html">Filmjeink</a></li>
+				<a href="" class="cta"><button>Ajánlatkérés </button></a>
 
-	<label for="nav-toggle"></label>
+			</ul>
 
-	<figure></figure>
-	<figure></figure>
-	<figure></figure>
+			<ul class="navLinks sidebar">
+				<li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="30"
+							viewBox="0 -960 960 960" width="30" fill="#fff">
+							<path
+								d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+						</svg></a></li>
+				<li><a href="">Főoldal</a></li>
+				<li><a href="">Dolgozz velünk!</a></li>
+				<li><a href="">Vélemények</a></li>
+				<li><a href="">Kapcsolat</a></li>
+				<li><a href="">Filmjeink</a></li>
 
-</a>
-<!---- END Visual Open Menu Toggle ---->
 
-<!---- Visual Close Menu Toggle ----->
-<a href="javascript:void(0);" class="nav-close">
+			</ul>
 
-	<label for="nav-close"></label>
+		</nav>
+		<a href="#" onclick=showSidebar() class="open"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+				viewBox="0 -960 960 960" width="30" fill="#fff">
+				<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+			</svg></a>
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-		<path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
-		<path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
-	</svg>
 
-</a>
-<!---- END Visual Close Menu Toggle ---->
 
-<!---- Logo Draw Animation, during transition ---->
-<!----- END End Logo Draw Animation ---->
-
-<!----- Main Navigation ---->
-<nav>
-
-	<ul>
-
-		<li><a href="silentNight.html" title="Home" rel="noopener" >Csendes ÉJ</a></li>
-
-		<li><a href="javascript:void(0);" title="About" rel="noopener">Egyedül</a></li>
-
-		<li><a href="javascript:void(0);" title="Services" rel="noopener">Services</a></li>
-
-		<li><a href="javascript:void(0);" title="Portfolio" rel="noopener">Portfolio</a></li>
-
-		<li><a href="javascript:void(0);" title="Contact" rel="noopener">Contact</a></li>
-
-	</ul>
-
-</nav>
-<!---- END Main Navigation ---->
+	</header> <div class="container">
 
 
 
 
-
-
-
-
-
-
-
-
-
+	<div class="content-container">
+		<div class="featured-content"
+			style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+			<img class="featured-title" src="img/f-t-1.png" alt="">
+			<p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+				deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+				minima voluptatibus incidunt. Accusamus, provident.</p>
+			<button class="featured-button">WATCH</button>
+		</div>
+		<div class="movie-list-container">
+			<h1 class="movie-list-title">TOVÁBBI FILMJEINK</h1>
+			<div class="movie-list-wrapper">
+				<div class="movie-list">
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/1.jpeg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/2.jpeg" alt="">
+						<span class="movie-list-item-title">Star Wars</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/3.jpg" alt="">
+						<span class="movie-list-item-title">Storm</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/4.jpg" alt="">
+						<span class="movie-list-item-title">1917</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/5.jpg" alt="">
+						<span class="movie-list-item-title">Avengers</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/6.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/7.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+				</div>
+				<i class="fas fa-chevron-right arrow"></i>
+			</div>
+		</div>
+		<div class="movie-list-container">
+			<h1 class="movie-list-title">LEGFRISSEBBEK</h1>
+			<div class="movie-list-wrapper">
+				<div class="movie-list">
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/8.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/9.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/10.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/11.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/12.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/1.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+					<div class="movie-list-item">
+						<img class="movie-list-item-img" src="img/1.jpg" alt="">
+						<span class="movie-list-item-title">Her</span>
+						<p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+							hic fugit similique accusantium.</p>
+						<button class="movie-list-item-button">Watch</button>
+					</div>
+				</div>
+				<i class="fas fa-chevron-right arrow"></i>
+			</div>
+		</div>
+		<div class="featured-content"
+			style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.png');">
+			<img class="featured-title" src="img/f-t-2.png" alt="">
+			<p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+				deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+				minima voluptatibus incidunt. Accusamus, provident.</p>
+			<button class="featured-button">MEGNÉZEM</button>
+		</div>
 
 
 </body>
+
 </html>
