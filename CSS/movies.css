@@ -9,6 +9,7 @@
   body {
 	font-family: "Roboto", sans-serif;
 	background-image: none;
+	background-color: black;
   }
   
   .navbar {
@@ -109,6 +110,7 @@
   .featured-content {
 	height: 50vh;
 	padding: 50px;
+	
   }
   
   .featured-title {
@@ -133,6 +135,7 @@
   
   .movie-list-container {
 	padding: 0 20px;
+	padding: 30px;
   }
   
   .movie-list-wrapper {
@@ -151,12 +154,14 @@
   .movie-list-item {
 	margin-right: 30px;
 	position: relative;
+	user-select: none;
   }
   
   .movie-list-item:hover .movie-list-item-img {
 	transform: scale(1.2);
 	margin: 0 30px;
 	opacity: 0.5;
+	
   }
   
   .movie-list-item:hover .movie-list-item-title,
@@ -174,7 +179,7 @@
   }
   
   .movie-list-item-title {
-	background-color: #333;
+	background-color: #00000047;
 	padding: 0 10px;
 	font-size: 32px;
 	font-weight: bold;
@@ -186,7 +191,7 @@
   }
   
   .movie-list-item-desc {
-	background-color: #333;
+	background-color: #333333a0;
 	padding: 10px;
 	font-size: 14px;
 	position: absolute;
@@ -255,4 +260,8 @@
   
 
 
+img{
+	user-select: none;
+	-webkit-user-drag: none;
 
+}
