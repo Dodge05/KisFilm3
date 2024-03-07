@@ -33,16 +33,21 @@ header{
 }
 
 .logo{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
     cursor: pointer;
     color: #edf0f1;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     max-width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .logo img{
-    width: 40%;
+
 }
 
 .navLinks{

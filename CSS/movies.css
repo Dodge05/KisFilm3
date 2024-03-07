@@ -373,7 +373,7 @@ nav > ul > li:nth-child(1) {
 	
 }
 nav > ul > li:nth-child(1)::after{
-    background-image: url(../IMG/Csendes-ej.gif);
+    background-image: url(../IMG/csendesejBanner.gif);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -445,5 +445,5 @@ nav > ul > li:nth-child(5) {
 }
 
 .cse{
-    background-image: url(../IMG/Csendes-ej.gif);
+    background-image: url(../IMG/csendesejBanner.gif);
 }
