@@ -10,6 +10,113 @@
     <script defer src="JS/script.js"></script>
 
     <title>Document</title>
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          -webkit-animation-name: fadeIn; /* Fade in the background */
+          -webkit-animation-duration: 0.4s;
+          animation-name: fadeIn;
+          animation-duration: 0.4s
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          width: 400px;
+          margin: 315px auto 0px auto;
+
+          -webkit-animation-name: slideIn;
+          -webkit-animation-duration: 0.4s;
+          animation-name: slideIn;
+          animation-duration: 0.4s
+        }
+        
+        /* The Close Button */
+        .close {
+          color: white;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+        
+        .close:hover, .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .modal-header {
+          padding: 2px 16px;
+          background-color: #FC5C65;
+          color: white;
+        }
+        
+        .modal-body {
+            font-size: 110%;
+            padding: 2px 16px;
+            background-color: #fff;
+        }
+
+        .modal-body input, .modal-body select{
+            width: 100%;
+            border: #686868 1px solid;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+
+        
+        .modal-body label{
+            font-weight: bold;
+        }
+
+        #send{
+            width: 25%;
+            margin-top: 20px;
+        }
+
+        .modal-footer {
+          padding: 2px 16px;
+          margin: auto;
+          text-align: center;
+          background-color: white;
+        }
+        
+        /* Add Animation */
+        @-webkit-keyframes slideIn {
+          from {left: -300px; opacity: 0} 
+          to {left: 0; opacity: 1}
+        }
+        
+        @keyframes slideIn {
+          from {left: -300px; opacity: 0}
+          to {left: 0; opacity: 1}
+        }
+        
+        @-webkit-keyframes fadeIn {
+          from {opacity: 0} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fadeIn {
+          from {opacity: 0} 
+          to {opacity: 1}
+        }
+        </style>
+
 </head>
 <body>
 
@@ -52,9 +159,9 @@
 
         <section class="inputRating">
 
-            <h2>Írjon vélemyént!</h2>
+            <h2>Írjon véleményt!</h2>
 
-            <button class="button">Írok</button>
+            <button class="button"  id="myBtn">Írok</button>
 
         </section>
 
@@ -153,6 +260,62 @@
         </section>
 
     </main>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Vélemény írás</h2>
+        </div>
+        <div class="modal-body">
+            <form action="" id="ertekeles">
+                <label for="name">Név (nem kötelező)</label>
+                <input type="text" id="name" placeholder="Anoním"  autocomplete="off">
+                <label for="stats">Értékelés:</label>
+                <select id="stats" required>
+                    <option value="">Válasszon</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                <label for="velemeny">Közlendő:</label>
+                <input type="text" id="velemeny" placeholder="Írjon véleményt" required  autocomplete="off">
+                <input type="submit" value="Beküldés" id="send">
+            </form>
+    </div>
+    <div class="modal-footer">
+
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    document.getElementById('ertekeles').addEventListener('submit', function(event) {
+            event.preventDefault();
+        });
+    </script>
     
 </body>
 </html>
