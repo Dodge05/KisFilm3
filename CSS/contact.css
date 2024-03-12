@@ -204,7 +204,6 @@
   textarea {
     margin: 0;
     font-family: inherit;
-    font-size: inherit;
     line-height: inherit; }
   
   button,
@@ -8185,7 +8184,7 @@
       right: 0;
       bottom: 0;
       content: '';
-      background: #000116;
+
       opacity: .7;
       z-index: -1; }
   
@@ -8345,6 +8344,7 @@
 
   .navLinks{
     list-style: none;
+    margin: 0px;
 }
 
 .navLinks li{
@@ -8550,14 +8550,7 @@ li, a, .button{
   text-decoration: none;
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 13px 15%;
-  max-height: 15%;
-  background-color:rgba(32, 36, 44, 0.9);
-}
+
 
 .logo{
 
@@ -8578,11 +8571,14 @@ body{
     background-color:#edf0f1; 
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vw;
     
 }
 
 *{
   scrollbar-width: none;
   font-family: 'Poppins';
+}
+
+.col-lg-5{
+  box-shadow: 0px 5px 30px 15px #000016;
 }
