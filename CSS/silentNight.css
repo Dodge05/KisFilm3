@@ -10,7 +10,7 @@ body{
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background: #222;
+  background: #131316;
   font-family: 'Poppins';
   background-image: url("../IMG/Csendes-ej.gif");
   background-position: center;
@@ -95,7 +95,7 @@ body {
   line-height: var(--line-height);
 }
 
-h1 {
+h2 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
   font-size: calc(var(--font-size) + 6vmin);
@@ -205,7 +205,7 @@ h1 {
 .main-navigation a {
   display: inline-block;
   width: 100%;
-  max-width: 800px;
+
   margin: 0 auto;
   color: var(--color-secondary);
   line-height: 1;
@@ -511,4 +511,106 @@ h1 {
 
 a:hover{
   color: #6f6f6f;
+}
+
+
+
+
+section p{
+
+}
+
+
+
+section img{
+
+  width: 80%;
+  
+}
+
+h3 {
+  margin-bottom: calc(var(--space) * 3);
+  font-family: var(--font-heading);
+  font-size: calc(var(--font-size) + 3vmin);
+  line-height: calc(var(--line-height) / 1.25);
+}
+
+.firstSection p{
+  width: 80%;
+}
+
+.helyszin{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 992px){
+  .helyszin{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+.helyszin img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.helyszin p{
+  width: 80%;
+  margin: auto;
+}
+
+.szereplokgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+  column-gap: 20px;
+  row-gap: 00px;
+  width: 90%;
+}
+
+@media (max-width: 576px){
+
+  .szereplokgrid{
+    grid-template-columns: 1fr;
+  }
+
+  .operator{
+    grid-column: 0;
+  }
+
+}
+
+.szereplokgrid img{
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+}
+
+@media (min-width: 577px){
+
+  .operator{
+
+    grid-column: 1 / span 2;
+  }
+
+
+}
+
+
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
