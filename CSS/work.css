@@ -110,4 +110,8 @@ video{
         max-width: 500px;
     }
 
+    .big {
+        font-size: 100px; 
+    }
+
 }
