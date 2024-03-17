@@ -614,3 +614,28 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.section1 i{
+
+  color: white;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  font-size: 200px;
+}
+
+
+.section1 i:hover{
+  cursor: pointer;
+  width: 220px;
+  height: 220px;
+  font-size: 220px;
+}
+
